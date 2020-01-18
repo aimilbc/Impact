@@ -364,6 +364,8 @@ public class Impact {
 			MainMenu();  // ++++++++++++++++++++++++++++++++Main menu++++++++++++++++++++++++++++++++
 			pickedActionMain = in.nextLine();
 
+			}else if (pickedActionMain.equalsIgnoreCase("E")) {
+				System.exit(0);
 			}
 		}
 		in.close();
@@ -374,6 +376,7 @@ public class Impact {
 		System.out.println("C)reate a new user");
 		System.out.println("A)ct as user");
 		System.out.println("D)isplay Feed");
+		System.out.println("E)xit");
 	}
 	
 	public static void UserMenu() {
