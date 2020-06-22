@@ -7,7 +7,7 @@ package Impact;  // consider deleting implements Post
  * @since 10/10/2019
  * **/
 public class Volunteer extends User{
-	String address,phone, time, dayFrom, dayTill;
+	private String address,phone, time, dayFrom, dayTill;
 
 	/**
 	 * a default constructor
@@ -27,13 +27,87 @@ public class Volunteer extends User{
 	 * @param address
 	 * @param phone
 	 */
-	public Volunteer(String name, String email, String userName, String password, String bio, String from, String to, String time, String address, String phone) {
+	public Volunteer(String name, String email, String userName, String password, String bio, String from, 
+			String to, String time, String address, String phone) {
 		super(name, email, userName, password, bio);
+		setEventDate(from, to);
+		setTime(time);
+		setLocation(address);
+		setPhone(phone);
+	}
+	
+	/**
+	 * set/change an event date
+	 * @param from : starting date
+	 * @param to : ending date
+	 */
+	public void setEventDate(String from, String to) {
 		this.dayFrom = from;
 		this.dayTill = to;
+	}
+	
+	/**
+	 * getter
+	 * @return starting date
+	 */
+	public String getFrom() {
+		return this.dayFrom;
+	}
+	
+	/**
+	 * set/change the time
+	 * @param time
+	 */
+	public void setTime(String time) {
 		this.time = time;
-		this.address = address;
+	}
+	
+	/**
+	 * get time
+	 * @return time
+	 */
+	public String getTime() {
+		return this.time;
+	}
+	
+	/**
+	 * set/change a location
+	 * @param location
+	 */
+	public void setLocation(String location) {
+		this.address = location;
+	}
+	
+	/**
+	 * get address
+	 * @return address
+	 */
+	public String getLocation() {
+		return this.address;
+	}
+	
+	/**
+	 * set phone number
+	 * @param phone number
+	 */
+	private void setPhone(String phone) {
 		this.phone = phone;
+	}
+	
+	/**
+	 * get phone number
+	 * @return phone number
+	 */
+	public String getPhone() {
+		return this.phone;
+	}
+	
+	/**
+	 * display event detail
+	 * @return event detail
+	 */
+	public String displayDetail() {
+		return "Event name: \t" + username +"\nDate: \t\t" + dayFrom + "-" + dayTill + "\nTime: \t\t" + time + "\nLocation: \t" + address + "\nPhone: \t\t" + phone + "\n";
 	}
 
 	/**
@@ -52,50 +126,6 @@ public class Volunteer extends User{
 	 */
 	@Override
 	public String getClassName() {
-		return "Volunteer";
+		return this.getClass().getName();
 	}
-	
-	/**
-	 * set/change an event date
-	 * @param from : starting date
-	 * @param to : ending date
-	 */
-	public void setEventDate(String from, String to) {
-		this.dayFrom = from;
-		this.dayTill = to;
-	}
-	
-	/**
-	 * getter
-	 * @return starting date
-	 */
-	public String getFrom() {
-		return dayFrom;
-	}
-	
-	/**
-	 * set/change the time
-	 * @param time
-	 */
-	public void setTime(String time) {
-		this.time = time;
-	}
-	
-	/**
-	 * set/change a location
-	 * @param location
-	 */
-	public void setLocation(String location) {
-		this.address = location;
-	}
-	
-	/**
-	 * display event detail
-	 * @return event detail
-	 */
-	public String displayDetail() {
-		return "Event name: \t" + username +"\nDate: \t\t" + dayFrom + "-" + dayTill + "\nTime: \t\t" + time + "\nLocation: \t" + address + "\nPhone: \t\t" + phone + "\n";
-	}
-
-	
 }
