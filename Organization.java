@@ -48,7 +48,7 @@ public class Organization extends User{
 	 * @return mail address
 	 */
 	public String getMailAddress() {
-		retrun this.mailAddress;
+		return this.mailAddress;
 	}
 	
 	/**

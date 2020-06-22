@@ -29,7 +29,7 @@ public class Post {
 	 * set index
 	 * @param index number
 	 */
-	private setIndex(int ind) {
+	private void setIndex(int ind) {
 		this.index = ind;
 	}
 	
@@ -45,7 +45,7 @@ public class Post {
 	 * set message
 	 * @param message
 	 */
-	private setMessage(String msg) {
+	private void setMessage(String msg) {
 		this.postMessage = msg;
 	}
 	
@@ -53,7 +53,7 @@ public class Post {
 	 * get message
 	 * @return message
 	 */
-	public getMessage() {
+	public String getMessage() {
 		return this.postMessage;
 	}
 	
