@@ -31,10 +31,18 @@ public class Events extends Post {
 	
 	/**
 	 * setting event Name
-	 * @param event
+	 * @param event name
 	 */
 	private void setEventName(String event) {
 		this.eventName = event;
+	}
+	
+	/**
+	 * getter event name
+	 * @return event name
+	 */
+	public String getEventName() {
+		return this.eventName;
 	}
 	
 	/**
@@ -46,11 +54,11 @@ public class Events extends Post {
 	}
 	
 	/**
-	 * getter
+	 * getter date of the event
 	 * @return starting date of the event
 	 */
 	public String getDate() {
-		return eventFrom;
+		return this.eventFrom;
 	}
 	
 	/**
@@ -61,8 +69,9 @@ public class Events extends Post {
 	public String toString() {
 		return " joined \"" + eventName + "\" now has " + amount + " registerd volunteeres. Please join us!!!!" ;
 	}
+	
 	/**
-	 * getter
+	 * getter for class name
 	 * @return post class name
 	 */
 	public String getPostClass() {
