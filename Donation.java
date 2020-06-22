@@ -34,7 +34,8 @@ public class Donation extends Post{
 	}
 	
 	/**
-	 * getter name
+	 * getter for name
+	 * @return name
 	 */
 	public String getName() {
 		return this.name;
@@ -49,7 +50,8 @@ public class Donation extends Post{
 	}
 	
 	/**
-	 * getter amount
+	 * getter for amount
+	 * @return amount
 	 */
 	public String getAmount() {
 		return this.amount;
