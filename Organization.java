@@ -44,11 +44,27 @@ public class Organization extends User{
 	}
 	
 	/**
+	 * getter mail address
+	 * @return mail address
+	 */
+	public String getMailAddress() {
+		retrun this.mailAddress;
+	}
+	
+	/**
 	 * set phone number
 	 * @param phoneNum
 	 */
 	private void setPhone(String phoneNum) {
 		this.phone = phoneNum;
+	}
+	
+	/**
+	 * getter phone
+	 * @return phone number
+	 */
+	public String getPhone() {
+		return this.phone;
 	}
 	
 	/**
@@ -60,6 +76,14 @@ public class Organization extends User{
 	}
 	
 	/**
+	 * getter tax ID
+	 * @return tax ID
+	 */
+	public String getTaxID() {
+		return this.taxExNum;
+	}
+	
+	/**
 	 * set bank info
 	 * @param bankInfo
 	 */
@@ -67,7 +91,14 @@ public class Organization extends User{
 		this.bankInfo = bankInfo;
 	}
 	
-
+	/**
+	 * get bank info
+	 * @return bank info
+	 */
+	public String getBankInfo() {
+		return this.bankInfo;
+	}
+	
 	/**
 	 * displays menu for organization user
 	 */
@@ -78,12 +109,12 @@ public class Organization extends User{
 	}
 
 	/**
-	 * getter
+	 * get class name
 	 * @return a class name
 	 */
 	@Override
 	public String getClassName() {
-		return "Organization";
+		return this.getClass().getName();
 	}
 	
 
