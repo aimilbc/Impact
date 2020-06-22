@@ -24,14 +24,6 @@ public class Donation extends Post{
 		setName(name);
 		setAmount(amount);
 	}
-	/**
-	 * display donation
-	 * @return donated organization and amount
-	 */
-	@Override
-	public String toString() {
-		return " donated $" + amount + " to " + "\'" + name + "\'";
-	}
 	
 	/**
 	 * set name
@@ -44,8 +36,8 @@ public class Donation extends Post{
 	/**
 	 * getter name
 	 */
-	public void getName() {
-		System.out.println("Name: " + name);
+	public String getName() {
+		return this.name;
 	}
 	
 	/**
@@ -59,8 +51,16 @@ public class Donation extends Post{
 	/**
 	 * getter amount
 	 */
-	public void getAmount() {
-		System.out.println("Amount: " + amount);
+	public String getAmount() {
+		return this.amount;
 	}
 	
+	/**
+	 * display donation
+	 * @return donated organization and amount
+	 */
+	@Override
+	public String toString() {
+		return " donated $" + amount + " to " + "\'" + name + "\'";
+	}
 }
