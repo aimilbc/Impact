@@ -8,7 +8,7 @@ package Impact;  // consider deleting implements Post
  * @since 10/10/2019
  * **/
 public class Organization extends User{
-	String mailAddress, phone, bankInfo, taxExNum;
+	private String mailAddress, phone, bankInfo, taxExNum;
 	
 	/**
 	 * a default constructor
@@ -29,11 +29,44 @@ public class Organization extends User{
 	 */
 	public 	Organization(String name, String email, String userName, String password, String bio, String address, String phone, String taxID, String bankInfo) {
 		super(name, email, userName, password, bio);
-		this.mailAddress = address;
-		this.phone = phone;
+		setmailAddress(address);
+		setPhone(phone);
+		setTax(taxID);
+		setBank(bankInfo);
+	}
+	
+	/**
+	 * set physical address
+	 * @param mail
+	 */
+	private void setmailAddress(String mail) {
+		this.mailAddress = mail;
+	}
+	
+	/**
+	 * set phone number
+	 * @param phoneNum
+	 */
+	private void setPhone(String phoneNum) {
+		this.phone = phoneNum;
+	}
+	
+	/**
+	 * set taxID
+	 * @param taxID
+	 */
+	private void setTax(String taxID) {
 		this.taxExNum = taxID;
+	}
+	
+	/**
+	 * set bank info
+	 * @param bankInfo
+	 */
+	private void setBank(String bankInfo) {
 		this.bankInfo = bankInfo;
 	}
+	
 
 	/**
 	 * displays menu for organization user

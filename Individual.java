@@ -7,8 +7,8 @@ package Impact;
  * @since 10/10/2019
  * **/
 public class Individual extends User{
-	int age, month, date, year;
-	String bankInfo, dateOfBirth;
+	private int age, month, date, year;
+	private String bankInfo, dateOfBirth;
 	
 	/**
 	 * a default constructor

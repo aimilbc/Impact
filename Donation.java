@@ -7,7 +7,7 @@ package Impact;
  * @since 10/10/2019
  * **/
 public class Donation extends Post{
-	String name, amount;
+	private String name, amount;
 	
 	/**
 	 * default constructor
@@ -21,8 +21,8 @@ public class Donation extends Post{
 	 */
 	public Donation(int index, String name, String amount) {
 		super.index = index;
-		this.name = name;
-		this.amount = amount;
+		setName(name);
+		setAmount(amount);
 	}
 	/**
 	 * display donation
@@ -32,4 +32,32 @@ public class Donation extends Post{
 	public String toString() {
 		return " donated $" + amount + " to " + "\'" + name + "\'";
 	}
+	
+	/**
+	 * set name
+	 * @param name
+	 */
+	private void setName(String name) {
+		this.name = name;
+	}
+	
+	/**
+	 * getter name
+	 */
+	public void getName() {
+		System.out.println("Name: " + name);
+	}
+	
+	/**
+	 * set amount
+	 * @param amount
+	 */
+	private void setAmount(String amount) {
+		this.amount = amount;
+	}
+	
+	public void getAmount() {
+		System.out.println("Amount: " + amount);
+	}
+	
 }
