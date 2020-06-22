@@ -31,12 +31,34 @@ public class Individual extends User{
 		this.bankInfo = bankInfo;
 	}
 	
-/**
- * getter
- * @return date of birth
- */
+	/**
+	 * set date of birth
+	 */
+	private void setDOB(String dob) {
+		this.dateOfBirth = dob;
+	}
+	
+	/** 
+	 * getter date of birth
+	 * @return date of birth
+	 */
 	public String getDOB() {
-		return dateOfBirth;
+		return this.dateOfBirth;
+	}
+	
+	/**
+	 * set bank info
+	 */
+	private void setBank(String bank) {
+		this.bankInfo = bank;
+	}
+	
+	/** 
+	 * getter bank info
+	 * @return bank info
+	 */
+	public String getBankInfo() {
+		return this.bankInfo;
 	}
 	
 	/**
@@ -49,6 +71,7 @@ public class Individual extends User{
 		System.out.println("R)egister for Event");
 		System.out.println("E)xit to main");
 	}
+	
 	/**
 	 * display inside of each individual
 	 */
@@ -62,7 +85,7 @@ public class Individual extends User{
 	 */
 	@Override
 	public String getClassName() {
-		return "Individual";
+		return this.getClass().getName();
 	}
 
 
