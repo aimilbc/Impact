@@ -7,7 +7,7 @@ package Impact;
  * @since 10/10/2019
  * **/
 public class PostWITHimage extends Post{
-	String postImage, locationOfImage;
+	private String postImage, locationOfImage;
 	
 	/**
 	 * default constructor
@@ -22,8 +22,40 @@ public class PostWITHimage extends Post{
 	 */
 	public PostWITHimage(int index, String msg, String img, String lctn) {
 		super(index, msg);
+		setImage(img);
+		setLocationOfImage(lctn);
+	}
+	
+	/**
+	 * set image
+	 * @param image definition
+	 */
+	private void setImage(String img) {
 		this.postImage = img;
-		this.locationOfImage = lctn;
+	}
+	
+	/**
+	 * get image
+	 * @return image
+	 */
+	public String getImage() {
+		return this.postImage;
+	}
+	
+	/**
+	 * set location of image
+	 * @param location of image
+	 */
+	private void setLocationOfImage(String lctn) {
+		this.LocationOfImage = lctn;
+	}
+	
+	/**
+	 * get location of image
+	 * @return Location of image
+	 */
+	public String getLocationOfImage() {
+		return this.LocationOfImage;
 	}
 	
 	/**
@@ -40,6 +72,6 @@ public class PostWITHimage extends Post{
 	 * @return post class name
 	 */
 	public String getPostClass() {
-		return "PostWITHimage";
+		return this.getClass().getName();
 	}
 }
