@@ -7,8 +7,8 @@ package Impact;
  * @since 10/10/2019
  * **/
 public class Post {
-	String postMessage;
-	int index;
+	private String postMessage;
+	private int index;
 
 	/**
 	 * default constructor
@@ -21,8 +21,16 @@ public class Post {
 	 * @param image : image
 	 */
 	public Post(int index, String message){
-		this.index = index;
-		this.postMessage = message;
+		setIndex(index);
+		setMessage(message);
+	}
+	
+	/**
+	 * set index
+	 * @param index number
+	 */
+	private setIndex(int ind) {
+		this.index = ind;
 	}
 	
 	/**
@@ -30,9 +38,25 @@ public class Post {
 	 * @return posted account's index number
 	 */
 	public int getIndex() {
-		return index;
+		return this.index;
 	}
-
+	
+	/**
+	 * set message
+	 * @param message
+	 */
+	private setMessage(String msg) {
+		this.postMessage = msg;
+	}
+	
+	/**
+	 * get message
+	 * @return message
+	 */
+	public getMessage() {
+		return this.postMessage;
+	}
+	
 	/**
 	 * display message
 	 * @return message
@@ -46,6 +70,6 @@ public class Post {
 	 * @return post class name
 	 */
 	public String getPostClass() {
-		return "Post";
+		return this.getClass().getName();
 	}
 }
