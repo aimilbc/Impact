@@ -7,7 +7,7 @@ package Impact;
  * @since 10/10/2019
  * **/
 public class User extends Post{
-	String name, email, username, password, bio;
+	private String name, email, username, password, bio;
 	
 	/**
 	 * default constructor
@@ -23,11 +23,19 @@ public class User extends Post{
 	 * @param bio : biographical profile
 	 */
 	public User(String name, String email, String username, String password, String bio) {
-		this.name = name;
-		this.email = email;
+		setName(name);
+		setEmail(email);
 		this.username = username;
 		this.password = password;
 		this.bio = bio;
+	}
+	
+	/**
+	 * set name
+	 * @param name
+	 */
+	private void setName(String name) {
+		this.name = name;
 	}
 	
 	/**
@@ -35,7 +43,15 @@ public class User extends Post{
 	 * @return name
 	 */
 	public String getName() {
-		return name;
+		return this.name;
+	}
+	
+	/**
+	 * set email
+	 * @param email
+	 */
+	private void setEmail(String email) {
+		this.email = email;
 	}
 	
 	/**
@@ -43,7 +59,15 @@ public class User extends Post{
 	 * @return email
 	 */
 	public String getEmail() {
-		return email;
+		return this.email;
+	}
+	
+	/**
+	 * set user name
+	 * @param user name
+	 */
+	private void setUserName(String un) {
+		this.username = un;
 	}
 	
 	/**
@@ -51,7 +75,15 @@ public class User extends Post{
 	 * @return user name
 	 */
 	public String getUserName() {
-		return username;
+		return this.username;
+	}
+	
+	/**
+	 * set password
+	 * @param password
+	 */
+	private void setPassword(String pw) {
+		this.password = pw;
 	}
 	
 	/**
@@ -59,7 +91,15 @@ public class User extends Post{
 	 * @return password
 	 */
 	public String getPassword() {
-		return password;
+		return this.password;
+	}
+	
+	/**
+	 * set bio
+	 * @param bio
+	 */
+	private void setBio(String bio) {
+		this.bio = bio;
 	}
 	
 	/**
@@ -67,7 +107,7 @@ public class User extends Post{
 	 * @return biographical profile
 	 */
 	public String getBio() {
-		return bio;
+		return this.bio;
 	}
 	
 	/**
@@ -83,6 +123,6 @@ public class User extends Post{
 	 * @return a class name
 	 */
 	public String getClassName() {
-		return "User";
+		return this.getClass().getName();
 	}
 }
