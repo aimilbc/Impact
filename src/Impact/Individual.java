@@ -25,7 +25,8 @@ public class Individual extends User{
 	 * @param age : age
 	 * @param bankInfo : bank account information
 	 */
-	public Individual(String name, String email, String userName, String password, String bio, String dob, String bankInfo) {
+	public Individual(String name, String email, String userName, 
+			String password, String bio, String dob, String bankInfo) {
 		super(name, email, userName, password, bio);
 		this.dateOfBirth = dob;
 		this.bankInfo = bankInfo;
@@ -76,7 +77,7 @@ public class Individual extends User{
 	 * display inside of each individual
 	 */
 	public String toString() {
-		return "\"" + name +"\"" + "\n\temail: " + email + "\n\tuserName " + username + "\n\tpassword: " + password + "\n\tbio " + bio+ "\n\tage: " + age + "\n\tbank Info " + bankInfo;
+		return "\"" + this.getName() +"\"" + "\n\temail: " + this.getEmail() + "\n\tuserName " + this.getUserName() + "\n\tpassword: " + this.getPassword() + "\n\tbio " + this.getBio()+ "\n\tage: " + this.age + "\n\tbank Info " + this.getBankInfo();
 	}
 
 	/**

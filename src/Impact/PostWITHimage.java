@@ -47,7 +47,7 @@ public class PostWITHimage extends Post{
 	 * @param location of image
 	 */
 	private void setLocationOfImage(String lctn) {
-		this.LocationOfImage = lctn;
+		this.locationOfImage = lctn;
 	}
 	
 	/**
@@ -55,7 +55,7 @@ public class PostWITHimage extends Post{
 	 * @return Location of image
 	 */
 	public String getLocationOfImage() {
-		return this.LocationOfImage;
+		return this.locationOfImage;
 	}
 	
 	/**
@@ -64,7 +64,7 @@ public class PostWITHimage extends Post{
 	 */
 	@Override
 	public String toString() {
-		return " posted image with message : \"" + postMessage +"\"" + "\tPic: " + postImage + "\tPic Location: " + locationOfImage ;
+		return " posted image with message : \"" + this.getMessage() +"\"" + "\tPic: " + this.getImage() + "\tPic Location: " + this.getLocationOfImage() ;
 	}
 	
 	/**

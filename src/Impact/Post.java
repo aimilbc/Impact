@@ -29,7 +29,7 @@ public class Post {
 	 * set index
 	 * @param index number
 	 */
-	private void setIndex(int ind) {
+	public void setIndex(int ind) {
 		this.index = ind;
 	}
 	

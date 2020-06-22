@@ -360,7 +360,7 @@ public class Impact {
 				}
 			}
 			for(int i = 0; i < Posts.size(); i++)
-				System.out.println(Accounts.get(Posts.get(i).getIndex()).username + Posts.get(i).toString() + "\n");
+				System.out.println(Accounts.get(Posts.get(i).getIndex()).getUserName() + Posts.get(i).toString() + "\n");
 			MainMenu();  // ++++++++++++++++++++++++++++++++Main menu++++++++++++++++++++++++++++++++
 			pickedActionMain = in.nextLine();
 

@@ -47,6 +47,14 @@ public class Volunteer extends User{
 	}
 	
 	/**
+	 * get day till
+	 * @return day till
+	 */
+	private String getTill() {
+		return this.dayTill;
+	}
+	
+	/**
 	 * getter
 	 * @return starting date
 	 */
@@ -107,7 +115,7 @@ public class Volunteer extends User{
 	 * @return event detail
 	 */
 	public String displayDetail() {
-		return "Event name: \t" + username +"\nDate: \t\t" + dayFrom + "-" + dayTill + "\nTime: \t\t" + time + "\nLocation: \t" + address + "\nPhone: \t\t" + phone + "\n";
+		return "Event name: \t" + this.getUserName() +"\nDate: \t\t" + this.getFrom() + "-" + this.getTill() + "\nTime: \t\t" + this.getTime() + "\nLocation: \t" + this.getLocation() + "\nPhone: \t\t" + this.getPhone() + "\n";
 	}
 
 	/**

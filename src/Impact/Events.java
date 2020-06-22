@@ -22,7 +22,7 @@ public class Events extends Post {
 	 * @param eventName
 	 */
 	public Events(int index, String eventName, String from) {
-		super.index = index;
+		super(index, "");
 		setEventName(eventName);
 		setFrom(from);
 		volunteersCount++;

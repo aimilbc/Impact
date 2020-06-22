@@ -25,7 +25,7 @@ public class User extends Post{
 	public User(String name, String email, String username, String password, String bio) {
 		setName(name);
 		setEmail(email);
-		setUserName(useraname);
+		setUserName(username);
 		setPassword(password);
 		setBio(bio);
 	}

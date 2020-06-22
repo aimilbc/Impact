@@ -20,7 +20,7 @@ public class Donation extends Post{
 	 * @param amount
 	 */
 	public Donation(int index, String name, String amount) {
-		super.index = index;
+		super(index, "");
 		setName(name);
 		setAmount(amount);
 	}
