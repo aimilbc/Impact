@@ -56,6 +56,9 @@ public class Donation extends Post{
 		this.amount = amount;
 	}
 	
+	/**
+	 * getter amount
+	 */
 	public void getAmount() {
 		System.out.println("Amount: " + amount);
 	}
