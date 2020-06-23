@@ -35,7 +35,7 @@ public class Individual extends User{
 	/**
 	 * set date of birth
 	 */
-	private void setDOB(String dob) {
+	public void setDOB(String dob) {
 		this.dateOfBirth = dob;
 	}
 	
@@ -50,7 +50,7 @@ public class Individual extends User{
 	/**
 	 * set bank info
 	 */
-	private void setBank(String bank) {
+	public void setBank(String bank) {
 		this.bankInfo = bank;
 	}
 	
