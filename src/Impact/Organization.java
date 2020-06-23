@@ -39,7 +39,7 @@ public class Organization extends User{
 	 * set physical address
 	 * @param mail
 	 */
-	private void setmailAddress(String mail) {
+	public void setmailAddress(String mail) {
 		this.mailAddress = mail;
 	}
 	
@@ -55,7 +55,7 @@ public class Organization extends User{
 	 * set phone number
 	 * @param phoneNum
 	 */
-	private void setPhone(String phoneNum) {
+	public void setPhone(String phoneNum) {
 		this.phone = phoneNum;
 	}
 	
@@ -71,7 +71,7 @@ public class Organization extends User{
 	 * set taxID
 	 * @param taxID
 	 */
-	private void setTax(String taxID) {
+	public void setTax(String taxID) {
 		this.taxExNum = taxID;
 	}
 	
@@ -87,7 +87,7 @@ public class Organization extends User{
 	 * set bank info
 	 * @param bankInfo
 	 */
-	private void setBank(String bankInfo) {
+	public void setBank(String bankInfo) {
 		this.bankInfo = bankInfo;
 	}
 	
