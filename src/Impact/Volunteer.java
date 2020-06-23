@@ -50,7 +50,7 @@ public class Volunteer extends User{
 	 * get day till
 	 * @return day till
 	 */
-	private String getTill() {
+	public String getTill() {
 		return this.dayTill;
 	}
 	
@@ -98,7 +98,7 @@ public class Volunteer extends User{
 	 * set phone number
 	 * @param phone number
 	 */
-	private void setPhone(String phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	
