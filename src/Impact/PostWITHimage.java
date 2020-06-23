@@ -30,7 +30,7 @@ public class PostWITHimage extends Post{
 	 * set image
 	 * @param image definition
 	 */
-	private void setImage(String img) {
+	public void setImage(String img) {
 		this.postImage = img;
 	}
 	
@@ -46,7 +46,7 @@ public class PostWITHimage extends Post{
 	 * set location of image
 	 * @param location of image
 	 */
-	private void setLocationOfImage(String lctn) {
+	public void setLocationOfImage(String lctn) {
 		this.locationOfImage = lctn;
 	}
 	
