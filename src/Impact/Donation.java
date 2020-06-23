@@ -29,7 +29,7 @@ public class Donation extends Post{
 	 * set name
 	 * @param name
 	 */
-	private void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
@@ -45,7 +45,7 @@ public class Donation extends Post{
 	 * set amount
 	 * @param amount
 	 */
-	private void setAmount(String amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 	
