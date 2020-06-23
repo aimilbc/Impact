@@ -45,7 +45,7 @@ public class Post {
 	 * set message
 	 * @param message
 	 */
-	private void setMessage(String msg) {
+	public void setMessage(String msg) {
 		this.postMessage = msg;
 	}
 	
