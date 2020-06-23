@@ -34,7 +34,7 @@ public class User extends Post{
 	 * set name
 	 * @param name
 	 */
-	private void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
@@ -50,7 +50,7 @@ public class User extends Post{
 	 * set email
 	 * @param email
 	 */
-	private void setEmail(String email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 	
@@ -66,7 +66,7 @@ public class User extends Post{
 	 * set user name
 	 * @param user name
 	 */
-	private void setUserName(String un) {
+	public void setUserName(String un) {
 		this.username = un;
 	}
 	
@@ -82,7 +82,7 @@ public class User extends Post{
 	 * set password
 	 * @param password
 	 */
-	private void setPassword(String pw) {
+	public void setPassword(String pw) {
 		this.password = pw;
 	}
 	
@@ -98,7 +98,7 @@ public class User extends Post{
 	 * set bio
 	 * @param bio
 	 */
-	private void setBio(String bio) {
+	public void setBio(String bio) {
 		this.bio = bio;
 	}
 	
