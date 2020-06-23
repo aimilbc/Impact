@@ -33,7 +33,7 @@ public class Events extends Post {
 	 * setting event Name
 	 * @param event name
 	 */
-	private void setEventName(String event) {
+	public void setEventName(String event) {
 		this.eventName = event;
 	}
 	
@@ -49,7 +49,7 @@ public class Events extends Post {
 	 * setting set event from date
 	 * @param from
 	 */
-	private void setFrom(String from) {
+	public void setFrom(String from) {
 		this.eventFrom = from;
 	}
 	
